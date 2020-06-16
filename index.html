@@ -66,95 +66,174 @@
 
             <!-- Search bar at the top right of page. Currently not working -->
 
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
-    <!-- name, email, and message columns for the contact page -->
+    <!-- About Me -->
 
-    
+    <form>
+        <div class="container">
+            <div class="header">
+                <h1>About Me</h1>
+            </div>
 
-    <div class="footer">
-        <p>Copyright</p>
-    </div>
+            <div class="center-about-me">
+                <div class="row">
+                    <div class="col-3 col-s-3 menu">
+                        <img class="imgAboutMe" src="Assets/Images/profilepic_frank.jpg" alt="Frank-Carr">
+                    </div>
+                    <div class="col-6 col-s-9">
+                        <h5 class="h5">Welcome to my page!</h5>
+                        <p class="p1">I'm Frank Carr, not born in Arizona although I have lived here for about 10 years
+                            of my life.
+                            During my time of living in AZ I have just been working full-time at a car dealership for
+                            Honda.
+                            Mostly for about 3 years, but I want to start onto a new career which has led me to studying
+                            in a online class for the Full-Stack development course from the U-of-A University. I am
+                            currently learning the fundamentals
+                            of coding. So far with html, css, and js. So right now I may not have much experience but by
+                            the end of the course I'll have
+                            the skills you are looking for to hire!
+                        </p>
+                    </div>
+                    <div class="col-3 col-s-12">
+                        <img class="imgAboutNess" src="Assets/Images/Ness-pic.jpg" alt="MyCat">
+                    </div>
+                </div>
+            </div>
 
-    <!-- Styling add ons to contact page -->
+            <!-- Rows and columns -->
 
-    <style>
-        .header {
-            padding: 45px;
-            text-align: left;
-            width: 100%;
-        }
+            <!-- <div class="col-3 col-s-12">
 
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+                    </div>
+                </div>
 
-        .center-contact-info {
-            text-align: center;
-            padding: 15px;
-        }
+                <div class="col-6 col-s-9">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary my-1">Submit</button>
 
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu li {
-            padding: 8px;
-            margin-bottom: 7px;
-            background-color: #33b5e5;
-            color: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-
-        .menu li:hover {
-            background-color: #0099cc;
-        }
+        </div>
+    </form> -->
 
 
-        .footer {
-            background-color: #1f333a;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
+            <div class="footer">
+                <p>Copyright</p>
+            </div>
 
-        .navbar-collapse.in {
-            display: block !important;
-        }
+            <!-- Styling add ons to index page -->
 
-        @media only screen and (max-width: 768px) {
+            <style>
+                .container {
+                    background-color: white;
+                    width: 2000px;
+                    height: 700px;
+                    margin: auto;
+                    margin-top: 45px;
+                    border: 3px solid #73AD21;
+                    justify-content: center;
+                }
 
-            /* For mobile phones: */
-            [class*="col-"] {
-                width: 100%;
-            }
-        }
-    </style>
+                body {
+                    background-image: url(https://images.homedepot-static.com/productImages/9d0ea204-622d-4bf2-b45a-96f84b2707cc/svn/walls-republic-wallpaper-r4666-218043-ess-64_1000.jpg);
+                }
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+                .imgAboutMe {
+                    float: left;
+                    max-width: 400px;
+                    max-height: 300px;
+                }
+
+                .imgAboutNess {
+                    float: right;
+                    max-width: 400px;
+                    max-height: 300px;
+                }
+
+                .p1 {
+                    float: right;
+                }
+
+                .header {
+                    padding: 45px;
+                    text-align: left;
+                    width: 100%;
+                }
+
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+
+                .center-about-me {
+                    text-align: center;
+                    padding: 15px;
+                }
+
+                .menu ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .menu li {
+                    padding: 8px;
+                    margin-bottom: 7px;
+                    background-color: #33b5e5;
+                    color: #ffffff;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                }
+
+                .menu li:hover {
+                    background-color: #0099cc;
+                }
+
+
+                .footer {
+                    background-color: #1f333a;
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: 12px;
+                    padding: 15px;
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
+
+                .navbar-collapse.in {
+                    display: block !important;
+                }
+
+                @media only screen and (max-width: 768px) {
+
+                    /* For mobile phones: */
+                    [class*="col-"] {
+                        width: 100%;
+                    }
+                }
+            </style>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
 
 
 </body>

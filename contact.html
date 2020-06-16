@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+    <!-- navbar at the top of the page with my personal name "Frank Carr"-->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <a class="navbar-brand" href="index.html">Frank Carr</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -18,32 +21,24 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- links next to personal name "About Me, Portfolio, Contact"-->
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
                     <a class="nav-link" href="contact.html">Contact</a>
-
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
+
+            <!-- Search bar at the top right of page. Currently not working -->
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
@@ -51,54 +46,48 @@
         </div>
     </nav>
 
+    <!-- name, email, and message columns for the contact page -->
+
     <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
-        </div>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+        <div class="header">
+            <h1>Contact Me</h1>
         </div>
 
-        <button type="submit" class="btn btn-primary my-1">Submit</button>
-    </form>
+        <!-- Rows and columns -->
 
-    <div class="row">
-        <div class="col-3 menu">
-            <ul>
-                <li>The Flight</li>
-                <li>The City</li>
-                <li>The Island</li>
-                <li>The Food</li>
-            </ul>
-        </div>
+        <div class="row">
+            <div class="col-3 col-s-3 menu">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                </div>
+            </div>
 
-        <div class="col-6">
-            <h1>The City</h1>
-            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
-                the old town and the modern city.</p>
-        </div>
-
-        <div class="col-3 right">
-            <div class="aside">
-                <h2>What?</h2>
-                <p>Chania is a city on the island of Crete.</p>
-                <h2>Where?</h2>
-                <p>Crete is a Greek island in the Mediterranean Sea.</p>
-                <h2>How?</h2>
-                <p>You can reach Chania airport from all over Europe.</p>
+            <div class="col-3 col-s-12">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="example@gmail.com">
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="col-6 col-s-9">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+            </div>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary my-1">Submit</button>
+
+        </div>
+    </form>
 
     <div class="footer">
-        <p>Resize the browser window to see how the content respond to the resizing.</p>
+        <p>Copyright</p>
     </div>
 
 </body>

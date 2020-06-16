@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="type/css" href=".Assets/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -14,12 +16,37 @@
 
     <!-- navbar at the top of the page with my personal name "Frank Carr"-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-static navbar-dark bg-info">
         <a class="navbar-brand" href="index.html">Frank Carr</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <nav class="navbar navbar-expand-lg navbar-static navbar-dark bg-info">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
 
         <!-- links next to personal name "About Me, Portfolio, Contact"-->
 
@@ -27,7 +54,7 @@
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">About Me <span class="sr-only">About Me</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -49,39 +76,39 @@
     <!-- name, email, and message columns for the contact page -->
 
     <form>
-        <div class="header">
-            <h1>Contact Me</h1>
-        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Contact Me</h1>
+            </div>
 
-        <!-- Rows and columns -->
+            <!-- Rows and columns -->
+            <div class="center-contact-info">
+                <div class="row">
+                    <div class="col-3 col-s-3 menu">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="John Smith">
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-3 col-s-3 menu">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                    <div class="col-3 col-s-12">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-s-9">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-3 col-s-12">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="example@gmail.com">
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-s-9">
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
-            </div>
-        </div>
-
-
-
-        <button type="submit" class="btn btn-primary my-1">Submit</button>
+            <button type="submit" class="btn btn-primary my-1">Submit</button>
 
         </div>
     </form>
@@ -89,6 +116,93 @@
     <div class="footer">
         <p>Copyright</p>
     </div>
+
+    <!-- Styling add ons to contact page -->
+
+    <style>
+        .header {
+            padding: 45px;
+            text-align: left;
+            width: 100%;
+        }
+
+        body {
+            background-image: url(https://images.homedepot-static.com/productImages/9d0ea204-622d-4bf2-b45a-96f84b2707cc/svn/walls-republic-wallpaper-r4666-218043-ess-64_1000.jpg);
+        }
+
+        .container {
+            background-color: honeydew;
+            margin-top: 15px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            margin-right: 15px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .center-contact-info {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+
+        .footer {
+            background-color: #1f333a;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar-collapse.in {
+            display: block !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
